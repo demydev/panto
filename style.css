@@ -2,9 +2,6 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Gilroy', sans-serif;
-    /* Sets Gilroy globally */
-    font-weight: 400;
-    /* Default to Regular */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -12,13 +9,14 @@ body {
 .con-hero {
     background-image: url(img/bg.png);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
+
+    min-height: 100vh;
 
     padding-left: 75px;
     padding-right: 75px;
     padding-top: 40px;
-
     display: flex;
     flex-direction: column;
 }
@@ -49,6 +47,14 @@ body {
     margin: 0;
 }
 
+.hero-div-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 524px;
+}
+
 .hero-big-text {
     margin: 85px 0 0 0;
     text-align: center;
@@ -71,18 +77,46 @@ body {
     margin-bottom: 45px;
 }
 
-.wrap-search-furniture{
-    margin: 0 auto;
-
-    color: #bebebe;
-
+.wrap-search-furniture {
     font-weight: 100;
     font-size: 18px;
     line-height: 150%;
 
     max-width: 345px;
+    width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+
+    border: rgb(195, 195, 195) solid 2px;
+    border-radius: 42px;
+
+}
+
+#search-but {
+    margin: 8px;
+}
+
+.search-furniture {
+    padding: 15px 0 15px 15px;
+
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+
+    font-size: 18px;
+    flex-grow: 1;
+
+}
+
+.search-furniture::placeholder {
+    color: rgb(195, 195, 195);
+
+    font-size: 18px;
+    font-weight: 200;
 }
