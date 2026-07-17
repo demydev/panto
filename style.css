@@ -42,22 +42,26 @@ body {
     font-weight: 200;
 }
 
-.nav-panto-text-logo{
+.nav-panto-text-logo {
     margin: 0;
+}
+
+.nav-panto-text-logo {
+    cursor: pointer;
 }
 
 .nav-wrap-text {
     color: white;
     text-decoration: none;
-    
-    border-bottom: 2px solid transparent; 
-    padding-bottom: 2px; 
-    
-    transition: border-color 0.3s ease-in-out; 
+
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+
+    transition: border-color 0.3s ease-in-out;
 }
 
 .nav-wrap-text:hover {
-    border-color: white; 
+    border-color: white;
     cursor: pointer;
 }
 
@@ -67,6 +71,8 @@ body {
     align-items: center;
 
     margin-bottom: 524px;
+
+    position: relative;
 }
 
 .hero-big-text {
@@ -113,6 +119,12 @@ body {
 
 #search-but {
     margin: 8px;
+    transition: transform 0.3s ease;
+}
+
+#search-but:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .search-furniture {
@@ -133,4 +145,30 @@ body {
 
     font-size: 18px;
     font-weight: 200;
+}
+
+.select-circle {
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+
+    border: rgb(195, 195, 195) solid 2px;
+    border-radius: 42px;
+
+    position: absolute;
+    top: 610px;
+    left: 228px;
+
+    transition: transform 0.3s ease-in-out,
+    padding 0.3s ease-in-out;
+}
+
+.select-circle:hover {
+    cursor: pointer;
+    padding: 20px;
+    transform: translate(-10px, -10px);
 }
